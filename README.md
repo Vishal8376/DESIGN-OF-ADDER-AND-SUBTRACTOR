@@ -1,4 +1,5 @@
 # FULL_ADDER_SUBTRACTOR
+
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
 **AIM:**
@@ -36,10 +37,13 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
-![WhatsApp Image 2025-04-22 at 10 43 17_517cb463](https://github.com/user-attachments/assets/3e1620d1-e2a9-4387-be27-54bdfb65c856)
+**1.FULL ADDER:**
 
+![image](https://github.com/user-attachments/assets/e160e58f-b9b2-4dc8-95bc-3d8c64af4027)
 
-![WhatsApp Image 2025-04-22 at 10 43 18_88f9e932](https://github.com/user-attachments/assets/0d1a306f-1de5-49b2-a6a9-6f9da6816c1a)
+**2.FULL SUBTRACTOR**
+
+![image](https://github.com/user-attachments/assets/3bce9cf6-f991-4ddc-b151-d475e4dd542e)
 
 **Procedure**
 
@@ -54,8 +58,7 @@ Borrow out = A'Bin + A'B + BBin
 5. For different input combinations generate the timing diagram.
 
 **Program:**
-~~~python
-
+```
 module exp3(a,b,cin,bin,sum_a,cout,diff_s,borr_s);
 input a,b,cin,bin;
 output sum_a,cout,diff_s,borr_s;
@@ -64,18 +67,21 @@ assign cout=(a^b)&cin |(a&b);
 assign diff_s=a^b^bin;
 assign borr_s=(~a&~b&~bin)|(~a&b&~bin)|(~a&b&bin)|(a&b&bin);
 endmodule
+```
 
-~~~
-Developed by : Vishal S
+Developed by   : Vishal S
 
 Register Number : 212224040364
 
+
 **RTL Schematic**
 
-![Screenshot 2025-04-22 110015](https://github.com/user-attachments/assets/0d03043d-4aa8-4a7a-bc7a-546b3e658188)
+![image](https://github.com/user-attachments/assets/b8b3c061-0309-4ec2-b970-d39e25ff8585)
 
 **Output Timing Waveform**
-![WhatsApp Image 2025-04-22 at 11 15 39_e8bba4be](https://github.com/user-attachments/assets/e083f2b0-aa7f-410e-beeb-bd6d2bc3898e)
+
+![image](https://github.com/user-attachments/assets/04c3665d-dc53-44ac-9ae5-32fc45e23aae)
+
 
 
 **Result:**
